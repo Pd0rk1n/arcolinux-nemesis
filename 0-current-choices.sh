@@ -39,7 +39,7 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 ##################################################################################################################################
 
 # set DEBUG to true to be able to analyze the scripts file per file
-export DEBUG=false
+export DEBUG=true
 
 ##################################################################################################################################
 
@@ -229,15 +229,15 @@ sh 160-install-bluetooth*
 sh 170-install-cups*
 
 #packages we need to build
-sh 200-software-aur-repo*
+#sh 200-software-aur-repo*
 #sh 300-sardi-extras*
 #sh 400-surfn-extras*
 
 # for arcoplasma
-sh 500-plasma*
+#sh 500-plasma*
 
 # installation of Chadwm
-sh 600-chadwm*
+#sh 600-chadwm*
 
 echo
 tput setaf 3
@@ -250,9 +250,9 @@ echo
 installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 cd $installed_dir/Personal
 
-sh 900-*
-sh 910-*
-sh 920-*
+#sh 900-*
+#sh 910-*
+#sh 920-*
 
 
 
@@ -277,7 +277,7 @@ sh 970-arch.sh
 
 sh 990-skel*
 
-sh 999-last*
+#sh 999-last*
 
 tput setaf 3
 echo "########################################################################"
