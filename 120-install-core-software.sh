@@ -93,7 +93,7 @@ sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dconf-editor
 sudo pacman -S --noconfirm --needed debugedit
 sudo pacman -S --noconfirm --needed devtools
-#sudo pacman -S --noconfirm --needed discord
+sudo pacman -R --noconfirm discord
 sudo pacman -S --noconfirm --needed downgrade
 #sudo pacman -S --noconfirm --needed dropbox
 if [ ! -f /usr/bin/duf ]; then

@@ -89,6 +89,17 @@ fi
 
 sudo pacman -S --noconfirm upd72020x-fw
 
+
+##### Remove Unwanted Software #####
+
+
+sudo pacman -Rs --noconfirm discord
+sudo pacman -Rs --noconfirm telegram-desktop
+sudo pacman -Rs --noconfirm dropbox
+
+
+
+
 # removing all plasma packages whenever possible
 if [ -f /usr/share/wayland-sessions/plasma.desktop ]; then
   sudo pacman -Rs --noconfirm arcolinux-plasma-keybindings-git
