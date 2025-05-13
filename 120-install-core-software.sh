@@ -99,6 +99,7 @@ sudo pacman -S --noconfirm --needed downgrade
 if [ ! -f /usr/bin/duf ]; then
   sudo pacman -S --noconfirm --needed duf
 fi
+sudo pacman -S --noconfirm --needed dysk
 sudo pacman -S --noconfirm --needed expac
 sudo pacman -S --noconfirm --needed fakeroot
 sudo pacman -S --noconfirm --needed feh
