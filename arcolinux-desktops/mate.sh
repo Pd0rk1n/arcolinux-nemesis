@@ -46,7 +46,7 @@ fi
 echo
 tput setaf 3
 echo "########################################################################"
-echo "################### bspwm"
+echo "################### Mate"
 echo "########################################################################"
 tput sgr0
 echo
@@ -73,43 +73,16 @@ func_install() {
 echo
 tput setaf 2
 echo "########################################################################"
-echo "################### Install Bspwm"
+echo "################### Install Mate"
 echo "########################################################################"
 tput sgr0
 echo
 
-sudo pacman -R --noconfirm arconet-xfce
 
 list=(
-alacritty
-edu-bspwm-git
-edu-polybar-git
-archlinux-logout-git
-edu-rofi-git
-edu-rofi-themes-git
-awesome-terminal-fonts
-bspwm
-dmenu
-edu-xfce-git
-feh
-nitrogen
-noto-fonts
-picom-git
-polybar
-polkit-gnome
-rofi
-sxhkd
-thunar
-thunar-archive-plugin
-thunar-volman
-ttf-hack
-volumeicon
-xcb-util-cursor
-xfce4-notifyd
-xfce4-power-manager
-xfce4-screenshooter
-xfce4-taskmanager
-xfce4-terminal
+mate
+mate-extra
+mate-tweak
 )
 
 count=0
@@ -128,10 +101,6 @@ echo "Copying all files and folders from /etc/skel/ to ~"
 echo "########################################################################"
 tput sgr0
 echo
-
-cp -af /etc/skel/.config/bspwm ~/.config/
-cp -af /etc/skel/.config/polybar ~/.config/
-cp -af /etc/skel/.bin ~
 
 echo
 tput setaf 6
